@@ -21,6 +21,8 @@ jobs:
       with:
         java-version: '17.0.*'
         distribution: 'temurin'
+    - name: Grant execute premission for gradle
+      run: chmod +x gradlew
     - name: Run Tests
       run: ./gradlew test
     
