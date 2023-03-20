@@ -43,7 +43,7 @@ jobs:
     - name: Build with Gradl
       run: ./gradlew build
     - name: Build and push docker image
-      uses: mr-smithers-excellent/docker-build@v6.1
+      uses: mr-smithers-excellent/docker-build-push@v6.1
       with:
         image: jacobniclarsen/docker-java-app-ga-version:0.0.1
         registry: docker.io
